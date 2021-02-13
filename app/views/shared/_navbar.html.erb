@@ -1,0 +1,39 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "https://www.skilehrerjobs.at/img137/school-header-51.jpg" %>
+  <% end %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "DE", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "EN", "#", class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- obviously refractor this all later... -->
+<div class="nav-bar">
+  <% if ["home"].include?(params[:action]) %>
+    <%= link_to "Home", root_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Home", root_path, class: "nav-elements"%>
+  <% end %>
+  <% if ["kurse"].include?(params[:action]) %>
+    <%= link_to "Kurse", kurse_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Kurse", kurse_path, class: "nav-elements"%>
+  <% end %>
+  <% if ["team"].include?(params[:action]) %>
+    <%= link_to "Team", team_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Team", team_path, class: "nav-elements"%>
+  <% end %>
+  <% if ["kontakt"].include?(params[:action]) %>
+    <%= link_to "Kontakt", kontakt_path, class: "nav-elements active-breadcrum"%>
+  <% else %>
+    <%= link_to "Kontakt", kontakt_path, class: "nav-elements"%>
+  <% end %>
+</div>
