@@ -1,6 +1,6 @@
 
-.tobi > img {
-  width: 30%
+.kontakt-person {
+  width: 100%;
 }
 .user-info {
   background: white;
@@ -13,4 +13,8 @@
   padding-left: 15px;
   padding-right: 15px;
   justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
