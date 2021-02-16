@@ -2,11 +2,13 @@
   background-size: cover;
   // background: url('placeholder5.png') no-repeat;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url('placeholder5.png');
-  position: relative;
   background-position: center;
   padding: 200px 0;
+  height: 80vh;
 }
-
+.banner-text {
+  position: relative;
+}
 .banner h1 {
   margin: 0;
   color: white;
@@ -29,6 +31,6 @@
 
 .the-x {
   position: absolute;
-  top: 65px;
-  left: 30px
+  top: -155px;
+  left: -15px;
 }

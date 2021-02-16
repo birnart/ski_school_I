@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "https://www.skilehrerjobs.at/img137/school-header-51.jpg" %>
   <% end %>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,10 +26,10 @@
   <% else %>
     <%= link_to "Kurse", kurse_path, class: "nav-elements"%>
   <% end %>
-  <% if ["team"].include?(params[:action]) %>
-    <%= link_to "Team", team_path, class: "nav-elements active-breadcrum"%>
+  <% if ["free_tab"].include?(params[:action]) %>
+    <%= link_to "free_tab", free_tab_path, class: "nav-elements active-breadcrum"%>
   <% else %>
-    <%= link_to "Team", team_path, class: "nav-elements"%>
+    <%= link_to "free_tab", free_tab_path, class: "nav-elements"%>
   <% end %>
   <% if ["kontakt"].include?(params[:action]) %>
     <%= link_to "Kontakt", kontakt_path, class: "nav-elements active-breadcrum"%>
