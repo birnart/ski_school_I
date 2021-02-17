@@ -1,32 +1,48 @@
 <div class="container mt-3" style="margin-bottom: 150px;">
-  <div class="card-trip">
-    <%= image_tag('placeholder1.png') %>
-    <div class="card-trip-infos">
-      <div>
-        <h2>Morningrun</h2>
-        <p>Individuelles choaching zum Morgen von <strong>8:30-10:00</strong></p>
-      </div>
-      <h2 class="card-trip-pricing">500.000$</h2>
-    </div>
-  </div>
-  <div class="card-trip">
-    <%= image_tag('placeholder1.png') %>
-    <div class="card-trip-infos">
-      <div>
-        <h2>Gruppenunterricht</h2>
-        <p>Kleingruppen von bis zu 5 Kindern von <strong>10:00-15:30</strong></p>
-      </div>
-      <h2 class="card-trip-pricing">7000$</h2>
-    </div>
-  </div>
-  <div class="card-trip">
+
+  <hr>
+  <hr>
+  <hr>
+  <div class="card-trip dropdown" id="card-trip2">
     <%= image_tag('placeholder1.png') %>
     <div class="card-trip-infos">
       <div>
         <h2>Privatkurse</h2>
         <p>Individuelles choaching ganztags mit flexiblen Zeiten</p>
       </div>
-      <h2 class="card-trip-pricing">500.000$</h2>
+      <h2 class="card-trip-pricing"><i class="fas fa-sort-down"></i></h2>
+    </div>
+    <div class="info-toggle card-trip-infos dropdown-menu" hidden id="info-toggle2">
+      all the info we need to know
+    </div>
+  </div>
+  <hr>
+  <hr>
+  <hr>
+  <div class="card-trip" id="card-trip1">
+    <%= image_tag('placeholder1.png') %>
+    <div class="card-trip-infos">
+      <div>
+        <h2>Gruppenunterricht</h2>
+        <p>Kleingruppen von bis zu 5 Kindern von <strong>10:00-15:30</strong></p>
+      </div>
+      <h2 class="card-trip-pricing"><i class="fas fa-sort-up"></i></h2>
+    </div>
+    <div class="info-toggle card-trip-infos hidden" id="info-toggle1">
+      all the info we need to know
+    </div>
+  </div>
+  <div class="card-trip" id="card-trip3">
+    <%= image_tag('placeholder1.png') %>
+    <div class="card-trip-infos">
+      <div>
+        <h2>Specials</h2>
+        <p>Individuelles choaching ganztags mit flexiblen Zeiten</p>
+      </div>
+      <h2 class="card-trip-pricing"><i class="fas fa-sort-up"></i></h2>
+    </div>
+    <div class="info-toggle card-trip-infos hidden" id="info-toggle3">
+      all the info we need to know
     </div>
   </div>
 </div>
