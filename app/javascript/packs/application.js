@@ -24,7 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import { cardInfoToggler } from '../components/card_toggler';
+import { cardInfoToggler } from './cardtoggler';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
